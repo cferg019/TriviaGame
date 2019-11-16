@@ -1,0 +1,11 @@
+/* canva - grecian holiday theme - #51 */
+/* canva - misty greens theme - #55 */
+
+body {
+    background-image: url("../images/animalPattern.png");
+}
+
+h1, h2 {
+    text-align: center;
+    color: white;
+}
