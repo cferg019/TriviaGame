@@ -1,6 +1,3 @@
-/* canva - grecian holiday theme - #51 */
-/* canva - misty greens theme - #55 */
-
 body {
     background-image: url("../images/animalPattern.png");
     font-family: 'Roboto', sans-serif;
@@ -23,9 +20,6 @@ h2 {
     font-size: 60px;
 }
 
-.btn {
-    border-color: gray;
-}
 .btn:hover {
     background-color: gray;
 }
@@ -33,4 +27,18 @@ h2 {
 .card {
     border: none;
     align-content: center;
+    margin: auto;
+}
+
+#questionDisplay, #wrongOrRight {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#answerTimer {
+    padding-top: 20px;
+}
+
+#startScreen {
+    margin-top: 200px;
 }

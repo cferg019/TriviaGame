@@ -77,11 +77,9 @@ var questions = [{
     answerOptions: ["Africa", "Australia", "South America", "Antarctica"],
     correctAnswerIndex: 2,
     imageURL: "https://media.giphy.com/media/b6Jt4ckHVgoRq/giphy.gif"
-}
-]
+}];
 
-$(document).ready(function () {
-});
+$(document).ready(function () {});
 
 var transitionToScreen = function (screen) {
     // Hide everything
@@ -100,7 +98,7 @@ var showNextQuestion = function () {
     answerTwoText.textContent = questions[currentQuestionIndex].answerOptions[1];
     answerThreeText.textContent = questions[currentQuestionIndex].answerOptions[2];
     answerFourText.textContent = questions[currentQuestionIndex].answerOptions[3];
-    $("#answerGIF").attr("src", questions[currentQuestionIndex].imageURL)
+    $("#answerGIF").attr("src", questions[currentQuestionIndex].imageURL);
 
     var questionTimeCountdown = 15;
     var countdown = function () {
@@ -158,7 +156,7 @@ $(".answerButton").click(function () {
 var showAnswerCountdown = function () {
     var answerTimeCountdown = 4;
     var countdown = function () {
-        var isEndOfGame = currentQuestionIndex === (questions.length - 1)
+        var isEndOfGame = currentQuestionIndex === (questions.length - 1);
         if (answerTimeCountdown === 0) {
             clearInterval(timer);
             // if the game is over
@@ -174,7 +172,7 @@ var showAnswerCountdown = function () {
             }
         }
         if (isEndOfGame) {
-            answerTimerText.textContent = ""
+            answerTimerText.textContent = "";
         } else {
             answerTimerText.textContent = "Next question in... " + answerTimeCountdown;
         }
@@ -193,3 +191,4 @@ $("#restartGame").on("click", function () {
 })
 
 transitionToScreen("start");
+
