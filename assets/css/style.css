@@ -3,9 +3,34 @@
 
 body {
     background-image: url("../images/animalPattern.png");
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: gray;
 }
 
-h1, h2 {
-    text-align: center;
+h1 {
+    font-size: 100px;
     color: white;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    text-shadow: -1px -1px 0 gray, 1px -1px 0 gray, -1px 1px 0 gray, 1px 1px 0 gray
+}
+
+h2 {
+    color: gray;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    font-size: 60px;
+}
+
+.btn {
+    border-color: gray;
+}
+.btn:hover {
+    background-color: gray;
+}
+
+.card {
+    border: none;
+    align-content: center;
 }
