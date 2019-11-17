@@ -79,7 +79,7 @@ var questions = [{
     imageURL: "https://media.giphy.com/media/b6Jt4ckHVgoRq/giphy.gif"
 }];
 
-$(document).ready(function () {});
+$(document).ready(function () {
 
 var transitionToScreen = function (screen) {
     // Hide everything
@@ -192,3 +192,4 @@ $("#restartGame").on("click", function () {
 
 transitionToScreen("start");
 
+});
